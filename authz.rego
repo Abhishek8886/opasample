@@ -1,18 +1,18 @@
-package opaweb.authz
+package http.authz
 
 default allow = false
 
 
 allow {
   input.method == "GET"
-  input.path == ["hello"]
+  input.path == ["/validus/userInfo",username]
   
 }
 
 
 allow {
   input.method == "GET"
-  input.path = ["bye"]
+  input.path = "bye"
   
 }
  
