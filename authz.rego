@@ -57,6 +57,13 @@ allow {
   input.roles[_] == "ADMIN"
 }
 
+allow {
+  some profile_id
+  input.method == "GET"
+  input.path = ["validus","group","user", profile_id]
+  profile_id == input.user_id
+}
+
 
 allow {
   some group_id
