@@ -64,6 +64,14 @@ allow {
   profile_id == input.user_id
 }
 
+allow {
+  some group_id
+  input.method == "GET"
+  input.path = ["validus","group", group_id]
+  group_id == input.roles[_]
+}
+
+
 
 allow {
   some group_id
