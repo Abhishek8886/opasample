@@ -68,7 +68,7 @@ allow {
   some group_id
   input.method == "GET"
   input.path = ["validus","group", group_id]
-  group_id == input.roles[_]
+  input.roles[_]  ==  group_id
 }
 
 
