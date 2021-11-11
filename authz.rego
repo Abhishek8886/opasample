@@ -19,7 +19,7 @@ allow {
   some profile_id
   input.method == "GET"
   input.path = ["validus","userInfo", profile_id]
-  input.roles[_] == "ADMIN"
+  input.roles[_] == "Admin"
 }
 
 allow {
@@ -33,13 +33,13 @@ allow {
   some profile_id
   input.method == "POST"
   input.path = ["validus","userInfo", profile_id]
-  input.roles[_] == "ADMIN"
+  input.roles[_] == "Admin"
 }
 
 allow {
   input.method == "GET"
   input.path = ["validus","userInfo", "all"]
-  input.roles[_] == "ADMIN"
+  input.roles[_] == "Admin"
 }
 
 allow {
@@ -54,7 +54,7 @@ allow {
   some profile_id
   input.method == "GET"
   input.path = ["validus","group","user", profile_id]
-  input.roles[_] == "ADMIN"
+  input.roles[_] == "Admin"
 }
 
 allow {
@@ -77,7 +77,7 @@ allow {
   some group_id
   input.method == "GET"
   input.path = ["validus","group", group_id]
-  input.roles[_] == "ADMIN"
+  input.roles[_] == "Admin"
 }
 
 
@@ -85,14 +85,14 @@ allow {
   
   input.method == "POST"
   input.path = ["validus","group", "addUser"]
-  input.roles[_] == "ADMIN"
+  input.roles[_] == "Admin"
 }
 
 allow {
   
   input.method == "POST"
   input.path = ["validus","group", "removerUser"]
-  input.roles[_] == "ADMIN"
+  input.roles[_] == "Admin"
 }
 
 
