@@ -3,9 +3,8 @@ package app.authz
 default allow = false
 
 allow {
-input.method == "POST"
-input.path = ["validus","login"]
-
+  input.method == "POST"
+  input.path = ["validus","login"]
 }
 
 allow {
