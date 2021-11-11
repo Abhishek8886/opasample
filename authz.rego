@@ -1,4 +1,4 @@
-package http.authz
+package app.authz
 
 default allow = false
 
