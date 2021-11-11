@@ -67,14 +67,14 @@ allow {
 
 
 allow {
-  some group_id
+  
   input.method == "POST"
   input.path = ["validus","group", "addUser"]
   input.roles[_] == "ADMIN"
 }
 
 allow {
-  some group_id
+  
   input.method == "POST"
   input.path = ["validus","group", "removerUser"]
   input.roles[_] == "ADMIN"
