@@ -7,6 +7,7 @@ user_roles := {
     "sumit":["ak14"]
 }
 
+
 allow {
   input.method == "POST"
   input.path = ["validus","login"]
