@@ -25,7 +25,7 @@ allow {
   some profile_id
   input.method == "GET"
   input.path = ["validus","userInfo", profile_id]
-  user_roles[input.userid][_] == profile_id
+  user_roles[input.user_id][_] == profile_id
 
 }
 
